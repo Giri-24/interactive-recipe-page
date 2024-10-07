@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chocolate Smoothie Recipe</title>
+  <link rel="stylesheet" href="recipe card.css">
+</head>
+
+<body>
+  <div class="recipe-card">
+    <h1 class="recipe-title">Chocolate Smoothie</h1>
+    <img src="chocolate-smoothie.jpg" alt="Chocolate Smoothie" class="recipe-image">
+    
+    <div class="recipe-details">
+      <button class="toggle-button" onclick="toggleIngredients()">Show Ingredients</button>
+      <ul class="ingredients-list hidden ">
+        <li>1 cup sugar</li>
+        <li>2 eggs</li>
+        <li>1 cup flour</li>
+        <li>1/2 cup cocoa powder</li>
+        <li>1 tsp baking powder</li>
+        <li>1/2 cup milk</li>
+        <!-- Add more ingredients as needed -->
+      </ul>
+    </div>
+
+    <div class="steps">
+      <button class="start-button" onclick="startCooking()">Start Cooking</button>
+      <ol>
+        <li>Preheat the oven to 180°C.</li>
+        <li>Mix all the dry ingredients.</li>
+        <li>Beat the eggs and mix with sugar.</li>
+        <li>Add the dry ingredients gradually to the egg mixture.</li>
+        <li>Bake for 30-35 minutes.</li>
+        <!-- Add more steps as needed -->
+      </ol>
+    </div>
+
+    <div class="prep-time">
+      <p>Preparation Time: 45 minutes | Servings: 4</p>
+      <p id="timer"></p>
+    </div>
+
+    <div class="progress-bar"></div>
+  </div>
+
+  <button class="print-button" onclick="window.print()">Print Recipe</button>
+
+  <script src="recipe card.js"></script>
+</body>
+
+</html>
