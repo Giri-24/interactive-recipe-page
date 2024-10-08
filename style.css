@@ -1,11 +1,14 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
-  margin: 0;
-  padding: 20px;
-  text-align: center;
-  background-color: black;
+    font-family: Arial, sans-serif;
+    background-image: url('8814513.jpg'); /* Correct way to add your background image */
+    background-size: cover; /* Ensure the background image covers the entire area */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 .recipe-card {
   max-width: 600px;
