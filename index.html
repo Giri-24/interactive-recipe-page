@@ -1,54 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Chocolate Smoothie Recipe</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Smoothie Recipe</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
-
 <body>
-  <div class="recipe-card">
-    <h1 class="recipe-title">Chocolate Smoothie</h1>
-    <img src="chocolate-smoothie.jpg" alt="Chocolate Smoothie" class="recipe-image">
+    <div class="recipe-card">
+        <h1>Chocolate Smoothie</h1>
+        <img src="chocolate-smoothie.jpg" alt="Chocolate Smoothie" class="recipe-image">
+
+        <div class="info">
+            <p><strong>Preparation Time:</strong> 10 minutes</p>
+            <p><strong>Serving Size:</strong> 2</p>
+        </div>
+
+        <button id="toggle-ingredients">Show Ingredients</button>
+        <ul id="ingredients-list" class="hidden">
+            <li>2 cups milk</li>
+            <li>2 tablespoons cocoa powder</li>
+            <li>1 banana</li>
+            <li>2 tablespoons peanut butter</li>
+            <li>1 tablespoon honey</li>
+            <li>Ice cubes (optional)</li>
+        </ul>
+
+        <button id="toggle-steps">Show Steps</button>
+        <ol id="steps-list" class="hidden">
+            <li>Place all ingredients into a blender.</li>
+            <li>Blend until smooth and creamy.</li>
+            <li>Pour into glasses and enjoy!</li>
+        </ol>
+
+        <div class="progress-bar">
+            <div id="progress"></div>
+        </div>
+
+        <button id="start-cooking">Start Cooking</button>
+        <button id="next-step" class="hidden">Next Step</button>
+
+        <div class="timer hidden">
+            <p>Time Remaining: <span id="time-remaining">10:00</span></p>
+        </div>
+        <br/><button id="print-recipe">Print Recipe</button>
+    </div>
+
     
-    <div class="recipe-details">
-      <button class="toggle-button" onclick="toggleIngredients()">Show Ingredients</button>
-      <ul class="ingredients-list hidden ">
-        <li>1 cup sugar</li>
-        <li>2 eggs</li>
-        <li>1 cup flour</li>
-        <li>1/2 cup cocoa powder</li>
-        <li>1 tsp baking powder</li>
-        <li>1/2 cup milk</li>
-        <!-- Add more ingredients as needed -->
-      </ul>
-    </div>
-
-    <div class="steps">
-      <button class="start-button" onclick="startCooking()">Start Cooking</button>
-      <ol>
-        <li>Preheat the oven to 180°C.</li>
-        <li>Mix all the dry ingredients.</li>
-        <li>Beat the eggs and mix with sugar.</li>
-        <li>Add the dry ingredients gradually to the egg mixture.</li>
-        <li>Bake for 30-35 minutes.</li>
-        <!-- Add more steps as needed -->
-      </ol>
-    </div>
-
-    <div class="prep-time">
-      <p>Preparation Time: 45 minutes | Servings: 4</p>
-      <p id="timer"></p>
-    </div>
-
-    <div class="progress-bar"></div>
-  </div>
-
-  <button class="print-button" onclick="window.print()">Print Recipe</button>
-
-  <script src="script.js"></script>
 </body>
-
 </html>
